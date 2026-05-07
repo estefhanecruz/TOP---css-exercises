@@ -1,26 +1,48 @@
+/* O Reset Universal */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* Garante que padding não aumente o tamanho da caixa */
+}
 body {
-  font-family: 'Courier New', Courier, monospace;
+	font-family: "Courier New", Courier, monospace;
 }
 
 img {
-  width: 100px;
-  height: 100px;
+	width: 100px;
+	height: 100px;
 }
 
 .title {
-  font-size: 36px;
-  font-weight: 900;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	font-size: 36px;
+	font-weight: 900;
+}
+.plants-section {
+	display: flex;
+	margin: 32px;
+	gap: 52px;
+	align-items: center;
+	justify-content: center;
+}
+
+.plant-card {
+	justify-content: center;
+	text-align: center;
+	width: 200px;
 }
 
 /* do not edit this footer */
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 52px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #eee;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 52px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #eee;
 }
