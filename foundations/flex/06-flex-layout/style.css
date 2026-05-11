@@ -1,26 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
+* {
+	padding: 0;
+	box-sizing: border-box; /* Garante que padding não aumente o tamanho da caixa */
+}
 body {
-  height: 100vh;
-  margin: 0;
-  overflow: hidden;
-  font-family: Roboto, sans-serif;
+	height: 100vh;
+	margin: 0;
+
+	overflow: hidden;
+	font-family: Roboto, sans-serif;
+	display: flex;
+	flex-direction: column;
 }
 
 img {
-  width: 600px;
+	width: 600px;
 }
 
 button {
-  font-family: Roboto, sans-serif;
-  border: none;
-  border-radius: 8px;
-  background: #eee;
+	font-family: Roboto, sans-serif;
+	border: none;
+	border-radius: 8px;
+	background: #eee;
+	padding: 10px;
 }
 
 input {
-  border: 1px solid #ddd;
-  border-radius: 16px;
-  padding: 8px 24px;
-  width: 400px;
+	border: 1px solid #ddd;
+	border-radius: 16px;
+	padding: 8px 24px;
+	width: 400px;
+}
+
+.header,
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.left-links,
+.right-links {
+	display: flex;
+	gap: 10px;
+	padding: 0px 20px 0px 20px;
+}
+
+.content {
+}
+.elements {
+	text-align: center;
+}
+.footer {
+	flex-shrink: 0; /* Impede que o rodapé encolha */
+	background-color: #eee;
+}
+
+ul {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: grey;
 }
