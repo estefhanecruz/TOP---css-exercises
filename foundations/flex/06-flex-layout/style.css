@@ -7,7 +7,6 @@
 body {
 	height: 100vh;
 	margin: 0;
-
 	overflow: hidden;
 	font-family: Roboto, sans-serif;
 	display: flex;
@@ -31,6 +30,7 @@ input {
 	border-radius: 16px;
 	padding: 8px 24px;
 	width: 400px;
+	margin: 20px;
 }
 
 .header,
@@ -47,6 +47,12 @@ input {
 }
 
 .content {
+	display: flex;
+	flex: 1 0 auto; /*Isso faz com que ele preencha todo o espaço disponível entre o topo e o rodapé. */
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 .elements {
 	text-align: center;
